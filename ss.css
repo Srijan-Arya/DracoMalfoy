@@ -6,6 +6,7 @@
     font-size:18px;
     scroll-behavior: smooth;
     /* overflow: hidden; */
+    border: 3px solid magenta;
 }
 
 
@@ -62,6 +63,9 @@ header ul{
     align-items: center;
     
 }
+/* img{
+    display: inline-block;
+} */
 header li>a{
     /* border:3px solid red; */
     color:white;
@@ -70,9 +74,9 @@ header li>a{
     transition: transform 0.4s;
 }
 header li>a:hover{
-    transform: scale(1.2);
-    transform: translateY(-5px);
-    border-bottom:2.5px solid yellow;
+    /* transform: scale(0.7); */
+     transform: translateY(-10px);
+    border-bottom:2.5px solid green; 
 }
 
 .nav a:active{
@@ -80,13 +84,17 @@ header li>a:hover{
 }
 
 .main-content-1{
-    overflow: hidden;
+    padding: 40px;
+    /* background-color: darkgray; */
+    
+    /* overflow: hidden; */
     display: flex;
+    justify-content: space-around;
     max-width: 90%;
     margin-top: 82px;
     margin-left:auto;
     margin-right:auto;
-    height:calc(100vh - 90px);
+    /* height:calc(100vh - 90px); */
     /* margin:auto; */
     text-align: center;
     /* border: 3px solid red; */
@@ -95,36 +103,38 @@ header li>a:hover{
 }
 .main-content-1 img{
     padding: 20px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
     /* border: 3px solid green; */
     width: auto;
     height: auto;
     /* -ms-flex-order: 1; */
 }
 
+#s1 img{
+    padding: 0;
+    height: 500px;
+}
+
 #s2 img, #s3 img, #s4 img{
-    margin: 80px;
+    /* margin: 80px; */
+    height: 500px;
     padding: 80px;
     /* box-shadow: 5px 5px 5px red; */
 }
-#s3 img, #s4 img{
-    border-radius: 0 50px;
+/* #s3 img, #s4 img{
+    /* border-radius: 0 80px; */
     /* box-shadow: 4px 4px 50px gray; */
-    transition: all 0.8s;
-    cursor: pointer;
-}
-#s3 img:hover{
-    transform: scale(1.1);  
-    border-radius: 0;
-    /* box-shadow: 1px 1px 25px white; */
-}
+    /* transition: all 0.8s; */
+    /* cursor: pointer;
+} */ 
+
 
 
 .intro{
     line-height: 2rem;
-    padding: 20px;
+    /* padding: 20px; */
     width: 50%;
-    margin: auto;
+    margin: auto 0;
     /* margin-top:0; */
     /* border: 3px solid rebeccapurple; */
 }
@@ -138,4 +148,43 @@ header li>a:hover{
 .intro_para{
     padding: 20px;
     color:white;
+}
+
+@media (min-width:200px) and (max-width:1180px){
+
+    body{
+        margin: 0;
+        padding: 10px;
+        border: 5px solid blue;
+    }
+    .main-content-1 img{
+        border: 5px solid teal;
+        transform: scale(0.9);
+        z-index: -1;
+        padding: 0;
+    }
+    #s3 img{
+        /* transform: scale(0.1); */
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        z-index: 5;
+    }
+    .main-content-1{
+        background-color: slategray;
+        display: block;
+        border: 5px solid red;
+        /* display: unset; */
+        padding: 10px;
+        max-width: 100%;
+        height: auto;
+        /* margin-top: 50px; */
+    }
+
+    .intro{
+        margin: auto;
+        width: 100%;
+    }
+
 }
