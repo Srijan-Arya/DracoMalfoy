@@ -70,7 +70,7 @@ header li>a{
     transition: transform 0.4s;
 }
 header li>a:hover{
-    transform: scale(1.2);
+    transform: scale(1.4);
     transform: translateY(-5px);
     border-bottom:2.5px solid yellow;
 }
@@ -114,7 +114,7 @@ header li>a:hover{
     cursor: pointer;
 }
 #s3 img:hover{
-    transform: scale(5.1);  
+    transform: scale(1.4);  
     border-radius: 0;
     /* box-shadow: 1px 1px 25px white; */
 }
