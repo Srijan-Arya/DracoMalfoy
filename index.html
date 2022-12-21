@@ -5,24 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draco</title>
+    <script>
+        const button_a = document.getElementById("menu-lines");
+        const content_a = document.getElementById("jse");
+        function fun(){
+            // if(document.getElementById("jse").className=="ok"){
+            //     alert("oki");
+            // }
+            if(document.getElementById("jse").className=="open")
+            {
+                document.getElementById("jse").className="";
+                
+            }
+
+            else
+            {   
+            // alert("closed");
+            document.getElementById("jse").className="open";
+            }
+}
+
+        // function fun2() {
+
+            
+        //     // alert("hey");
+        //     const nme = document.querySelector("#jse");
+            
+        //     nme.style.display="none";
+        // }
+        </script>
     <link rel="stylesheet" href="./ss.css">
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-<body>
+<body >
     <header class="nav">
+        <div class="combo">
         <i class='bx bxs-castle'></i><h3>Draco</h3>
-    <ul>
-        <li><a id="act" href="#">MyStory</a></li>
-        <li><a href="#s2">Slytherin</a></li>
+        <i class='bx bx-menu' id="menu-lines" onclick="fun()"></i>
+    </div>
+        <ul id="jse">
+        <li><a href="#s1" id="act">MyStory</a></li>
+        <li><a href="#s2" >Slytherin</a></li>
         <li><a href="#s3">Antagonist</a></li>
         <li><a href="#s4">Hogwarts</a></li>
     </ul>
 </header>
 
-
+<div class="notouch">
 <section class="main-content-1" id="s1">
     <div class="boximg"><img src="./images/my story.png" alt="#"></div>
     <div class="intro">
@@ -67,5 +99,6 @@
         </p>
     </div>
 </section>
+</div>
 </body>
 </html>
