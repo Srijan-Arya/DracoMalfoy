@@ -5,26 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draco</title>
+    <script>
+        const button_a = document.getElementById("menu-lines");
+        const content_a = document.getElementById("jse");
+        function fun(){
+            // if(document.getElementById("jse").className=="ok"){
+            //     alert("oki");
+            // }
+            if(document.getElementById("jse").className=="open")
+            {
+                document.getElementById("jse").className="";
+                
+            }
+
+            else
+            {   
+            // alert("closed");
+            document.getElementById("jse").className="open";
+            }
+}
+
+        // function fun2() {
+
+            
+        //     // alert("hey");
+        //     const nme = document.querySelector("#jse");
+            
+        //     nme.style.display="none";
+        // }
+        </script>
     <link rel="stylesheet" href="./ss.css">
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-<body>
+<body >
     <header class="nav">
+        <div class="combo">
         <i class='bx bxs-castle'></i><h3>Draco</h3>
-    <ul>
-        <li><a id="act" href="#">MyStory</a></li>
-        <li><a href="#s2">Slytherin</a></li>
+        <i class='bx bx-menu' id="menu-lines" onclick="fun()"></i>
+    </div>
+        <ul id="jse">
+        <li><a href="#s1" id="act">MyStory</a></li>
+        <li><a href="#s2" >Slytherin</a></li>
         <li><a href="#s3">Antagonist</a></li>
         <li><a href="#s4">Hogwarts</a></li>
     </ul>
 </header>
 
-
+<div class="notouch">
 <section class="main-content-1" id="s1">
-    <img src="./images/my story.png" alt="#">
+    <div class="boximg"><img src="./images/my story.png" alt="#"></div>
     <div class="intro">
         <h2 class="intro_heading">My Story</h2>
         <p class="intro_para"><br>"My Father Will Hear About This!" <br> Well, that's me in a nutshell. You may think I am evil, I was born evil but that's not the case. You see, you are in no position to judge Draco Lucius Malfoy, you filthy muggle. What side is choose is the <b>Right</b> side and will always be. And by the way, "No One Asked Your Opinion, You Filthy Little Mudblood!"
@@ -34,7 +66,9 @@
 
 
 <section class="main-content-1" id="s2">
+    <div class="boximg">
     <img src="./images/slyhterin.png" alt="#" id="ss">
+    </div>
     <div class="intro">
         <h2 class="intro_heading">Slytherin</h2>
         <p class="intro_para"><br>"Or perhaps in Slytherin,
@@ -47,7 +81,8 @@
 </section>
 
 <section class="main-content-1" id="s3">
-    <img src="./images/newspaper.jpg" alt="#">
+    <div class="boximg">
+    <img src="./images/newspaper.jpg" alt="#"></div>
     <div class="intro">
         <h2 class="intro_heading">Antagonist</h2>
         <p class="intro_para"><br>“	I really don't think they should let the other sort in, do you? They're just not the same, they've never been brought up to know our ways. Some of them have never even heard of Hogwarts until they get the letter, I imagine. I think they should keep it in the old wizarding families." — Draco Malfoy.
@@ -56,12 +91,14 @@
 </section>
 
 <section class="main-content-1" id="s4">
-    <img src="./images/hogwarts.png" alt="#">
+    <div class="boximg">
+    <img src="./images/hogwarts.png" alt="#"></div>
     <div class="intro">
         <h2 class="intro_heading">Hogwarts</h2>
         <p class="intro_para"><br>The day begins at Hogwarts with breakfast in the Great Hall. Students sit at their own House table and can eat and socialise, or finish homework. The Headmaster or Headmistress eats with the professors at the High Table placed at the far end of the hall. During breakfast, owls bring in the students' post, generally consisting of The Daily Prophet, letters from parents or friends, or packages from home. A bell signals the start of the first class of the morning at 9 am.
         </p>
     </div>
 </section>
+</div>
 </body>
 </html>
