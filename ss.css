@@ -76,7 +76,7 @@ header li>a{
 header li>a:hover{
     /* transform: scale(0.7); */
      transform: translateY(-10px);
-    border-bottom:2.5px solid green; 
+    border-bottom:2.5px solid yellow; 
 }
 
 .nav a:active{
