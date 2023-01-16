@@ -6,7 +6,7 @@
     font-size:18px;
     scroll-behavior: smooth;
     scroll-padding-top: 84px; /*scrolling doesnt take the top part*/
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
 }
 
 
@@ -203,7 +203,37 @@ header li>a:hover{
 }
 
 
+
+footer{
+    color: white;
+    padding: 15px;
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    /* border: 3px solid red; */
+    background: radial-gradient( rgb(0, 0, 0) 24.5%, rgb(0, 0, 0) 66%);
+
+
+}
+
+.ln,.gb,.ig{
+    margin: 0 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    /* color: red; */
+}
+.linksmy a box-icon{
+    transform:scale(1.4);
+}
+.linksmy box-icon:hover{
+    /* transform: scale(1.5); */
+    animation: flip-2-ver-right-fwd 0.3s ease-in;    
+}
+
+
+
 /* CSS ANIMATIONS */
+@-webkit-keyframes flip-2-ver-right-fwd{0%{-webkit-transform:translateX(0) translateZ(0) rotateY(0);transform:translateX(0) translateZ(0) rotateY(0);-webkit-transform-origin:100% 50%;transform-origin:100% 50%}100%{-webkit-transform:translateX(100%) translateZ(160px) rotateY(-180deg);transform:translateX(100%) translateZ(160px) rotateY(-180deg);-webkit-transform-origin:0 50%;transform-origin:0 50%}}@keyframes flip-2-ver-right-fwd{0%{-webkit-transform:translateX(0) translateZ(0) rotateY(0);transform:translateX(0) translateZ(0) rotateY(0);-webkit-transform-origin:100% 50%;transform-origin:100% 50%}100%{-webkit-transform:translateX(100%) translateZ(160px) rotateY(-180deg);transform:translateX(100%) translateZ(160px) rotateY(-180deg);-webkit-transform-origin:0 50%;transform-origin:0 50%}}
 @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -238,9 +268,20 @@ header li>a:hover{
 /* @keyframes slide-rotate-hor-b-fwd{0%{-webkit-transform:translateY(0) translateZ(0) rotateX(0deg);transform:translateY(0) translateZ(0) rotateX(0deg);-webkit-transform-origin:top center;transform-origin:top center}
 100%{-webkit-transform:translateY(150px) translateZ(130px) rotateX(90deg);transform:translateY(150px) translateZ(130px) rotateX(90deg);-webkit-transform-origin:top center;transform-origin:top center}} */
 
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 @media (min-width:200px) and (max-width:1180px){
-
+    *{
+        box-sizing: border-box;
+        /* border: 3px solid cyan; */
+    }
     body{
         margin: 0;
         padding: 10px;
@@ -253,10 +294,22 @@ header li>a:hover{
     .boximg{
         width: 100%;
         height: auto;
+        background-position: left;
     }
+
+    #s3{
+        background:none;
+    }
+    #s2{
+        background-position: top;
+    }
+    #s4{
+        background-size:80% ;
+    }
+
     #s2 img, #s3 img, #s4 img{
-        width: 80%;
-        height: 80%;
+        width: 50%;
+        height: 60%;
         padding: 0px;
         margin: 10px;
         max-width: 500px; 
