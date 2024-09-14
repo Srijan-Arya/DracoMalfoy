@@ -5,16 +5,15 @@
 ![image](https://github.com/user-attachments/assets/0c08693b-d21c-4205-9abc-56bd2bc47d74)
 
 ## Features
-- Dynamic project sections with hover animations
+- Dynamic project sections with hover animations using CSS Animations
 - Interactive elements with expanding and closing functionality
 - Fully responsive layout
 - Styled with SCSS for maintainability and flexibility
-- Modern JavaScript for smooth transitions and event handling
+- No JS
 
 ## Technologies Used
 - **HTML5**
-- **CSS3** (SCSS)
-- **JavaScript** (ES6+)
+- **CSS3**
 - **Responsive Design**
 
 ## Live Demo
