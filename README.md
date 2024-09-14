@@ -1,4 +1,4 @@
-# Malfoy - Creative Portfolio Website | My Frst Website
+# Malfoy - Creative Portfolio Website | My First Website
 
 **Malfoy** is a sleek and interactive portfolio website designed to showcase creative projects. Built with a minimalist design and smooth animations, it delivers a captivating user experience.
 
@@ -22,7 +22,9 @@ Check out the live version of the website here: [Malfoy Live](https://srijan-ary
 
 ## Screenshots
 
+
 ![image](https://github.com/user-attachments/assets/03ef03bd-030b-413b-81c7-7b3f525e8e8d)
+
 
 ![image](https://github.com/user-attachments/assets/0edd252e-6926-4c1e-a27d-2f413b014abd)
 
